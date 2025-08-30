@@ -1,7 +1,9 @@
 {
   "name": "recipe-world",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A React-based recipe sharing app with filters, ratings, and member-exclusive features.",
+  "author": "Jazmyn Alpha and Dylan Wilson",
   "type": "module",
   "scripts": {
   "dev": "vite",
@@ -13,8 +15,7 @@
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^6.30.1",
-    "sass": "^1.91.0"
+    "react-router-dom": "^6.30.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -25,6 +26,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "sass": "^1.73.0"
   }
 }
