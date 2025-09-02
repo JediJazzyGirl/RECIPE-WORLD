@@ -1,29 +1,36 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import PublicRecipes from "./pages/PublicRecipes";
-import MembersRecipes from "./pages/MembersRecipes";
-import Drinks from "./pages/Drinks";
-import AdminDashboard from "./pages/AdminDashboard";
-import { AuthProvider } from "./context/AuthContext";
-import { RecipeProvider } from "./context/RecipeContext";
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar.js';
+import Home from './pages/Home.js';
+import Login from './pages/Login.js';
+import Signup from './pages/Signup.js';
+import Members from './pages/Members.js';
+import Drinks from './pages/Drinks.js';
+import SubmitRecipe from './pages/SubmitRecipe.js';
+import Admin from './pages/Admin.js';
+import RecipeDetail from './pages/RecipeDetail.js';
+import DrinkDetail from './pages/DrinkDetail.js';
+import ProtectedRoute from './routes/ProtectedRoute.js';
+import { AuthProvider } from './context/AuthContext.js';
 
 export default function App() {
   return (
     <AuthProvider>
-      <RecipeProvider>
-        <Router>
-          <Navbar />
-          <div className="container my-4">
-            <Routes>
-              <Route path="/" element={<PublicRecipes />} />
-              <Route path="/members" element={<MembersRecipes />} />
-              <Route path="/drinks" element={<Drinks />} />
-              <Route path="/admin" element={<AdminDashboard />} />
-            </Routes>
-          </div>
-        </Router>
-      </RecipeProvider>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/members" element={<ProtectedRoute><Members /></ProtectedRoute>} />
+        <Route path="/submit" element={<ProtectedRoute><SubmitRecipe /></ProtectedRoute>} />
+        <Route path="/admin" element={<ProtectedRoute requireAdmin><Admin /></ProtectedRoute>} />
+        <Route path="/recipe/:id" element={<RecipeDetail />} />
+        <Route path="/drink/:id" element={<DrinkDetail />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+      <footer>
+        Built with React + Vite • All components in <strong>.js</strong> files (no .jsx)
+      </footer>
     </AuthProvider>
   );
 }
