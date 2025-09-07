@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/drinks" element={<Drinks />} /> 
         <Route path="/members" element={<ProtectedRoute><Members /></ProtectedRoute>} />
         <Route path="/submit" element={<ProtectedRoute><SubmitRecipe /></ProtectedRoute>} />
         <Route path="/admin" element={<ProtectedRoute requireAdmin><Admin /></ProtectedRoute>} />

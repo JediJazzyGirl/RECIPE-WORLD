@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { KEYS, load, save } from '../storage.js';
+import baseCultures from '../data/cultures.js';
 
 export default function SubmitRecipe() {
   const [title, setTitle] = useState('');
@@ -61,7 +62,7 @@ export default function SubmitRecipe() {
           <div className="form-group">
             <label>Culture</label>
             <select className="select" value={culture} onChange={e=>setCulture(e.target.value)}>
-              {['American','Italian','Indian','Mexican','Korean','Japanese','Chinese','French','Thai','Greek'].map(c=>(<option key={c} value={c}>{c}</option>))}
+              {baseCultures.map(c=>(<option key={c} value={c}>{c}</option>))}
             </select>
           </div>
           <div className="form-group">
