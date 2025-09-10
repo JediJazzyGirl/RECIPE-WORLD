@@ -69,7 +69,7 @@ src/
 </pre>
 
 
-Authentication & Usage
+🔐 Authentication & Usage
 
 - Users can register and login.
 - Optional admin code (letmeinadmin) grants admin privileges.
@@ -77,7 +77,7 @@ Authentication & Usage
 - Admins moderate submissions through a dedicated dashboard.
 - Visitors can browse and filter beginner recipes without registration.
 
-Additional Notes
+📝 Additional Notes
 
 - Recipe submissions support image uploads via FileReader; images are stored
   as base64 strings in LocalStorage.
