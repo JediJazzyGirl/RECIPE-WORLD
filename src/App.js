@@ -30,7 +30,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <footer>
-        Built with React + Vite • All components in <strong>.js</strong> files (no .jsx)
+        Built by Jazmyn Alpha and Dylan Wilson
       </footer>
     </AuthProvider>
   );

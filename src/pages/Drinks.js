@@ -18,6 +18,19 @@ export default function Drinks() {
   return (
     <div className="container">
       <h1>Drinks</h1>
+
+      {/* in case we need to reset pictures */}
+      {/* {process.env.NODE_ENV === 'development' && (
+        <div style={{ marginBottom: '1rem' }}>
+          <button onClick={() => {
+            localStorage.removeItem('rw_drinks_v1');
+            window.location.reload();
+          }}>
+            Reset Drinks Data
+          </button>
+        </div>
+      )} */} 
+      
       <div className="form-row" style={{ marginTop: '.5rem', marginBottom: '1rem' }}>
         <div className="form-group">
           <label>Show</label>

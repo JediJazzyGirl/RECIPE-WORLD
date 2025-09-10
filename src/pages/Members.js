@@ -20,6 +20,19 @@ export default function Members() {
   return (
     <div className="container">
       <h1>Members-Only: Advanced Recipes</h1>
+
+      {/* in case we need to reset pictures - uncomment below
+      {process.env.NODE_ENV === 'development' && (
+        <div style={{ marginBottom: '1rem' }}>
+          <button onClick={() => {
+            localStorage.removeItem('rw_recipes_v1');
+            window.location.reload();
+          }}>
+            Reset Recipes Data
+          </button>
+        </div>
+      )} */}
+
       <div className="form-row" style={{ marginTop: '.5rem', marginBottom: '1rem' }}>
         <div className="form-group">
           <label>Filter by Culture</label>
