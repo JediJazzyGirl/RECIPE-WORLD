@@ -60,6 +60,7 @@ Separate browse and detail pages for drinks, expanding the culinary experience.
 
 📁 Project Structure
 
+<pre> ```
 src/
 ├── components/        # Reusable UI components (RecipeCard, StarRating, etc.)
 ├── context/           # Authentication context and provider
@@ -70,12 +71,14 @@ src/
 ├── utils.js           # Utility functions (e.g. average)
 ├── storage.js         # LocalStorage helpers
 └── App.js             # Main app and route definitions
+``` </pre>
 
 🛠️ Installation
-
+<pre> ```
    git clone https://github.com/JediJazzyGirl/RECIPE-WORLD
    npm install
    npm start
+``` </pre>
 
 
 Authentication & Usage
