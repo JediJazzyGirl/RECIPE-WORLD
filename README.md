@@ -106,3 +106,7 @@ Additional Notes
 
 - Jazmyn Alpha
 - Dylan Wilson
+
+<pre> ```bash src/ ├── components/ # Reusable UI components (RecipeCard, StarRating, etc.) ├── context/ # Authentication context and provider ├── data/ # Seed data for recipes, drinks, and cultures ├── pages/ # Route pages (Home, Login, Signup, Members, etc.) ├── routes/ # ProtectedRoute component ├── styles.css # Global CSS styles ├── utils.js # Utility functions (e.g. average) ├── storage.js # LocalStorage helpers └── App.js # Main app and route definitions ``` </pre>
+
+<pre> ```bash git clone https://github.com/JediJazzyGirl/RECIPE-WORLD cd RECIPE-WORLD npm install npm start ``` </pre>
