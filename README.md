@@ -10,40 +10,28 @@ Recipe World celebrates cultural diversity through food by creating a community-
 
 - 👨‍🍳 Public & Member-Only Recipes
 Basic recipes accessible to all visitors; advanced and premium dishes unlocked for registered members.
-
 - 🧾 Filter by Culture, Type & Difficulty
 Discover recipes by culture (Italian, Japanese, etc.), category (food, alcoholic/non-alcoholic drinks), and skill level with smart filters.
-
 - 📸 Upload Recipes with Photos
 Members submit recipes with ingredients, instructions, and mandatory photos of the finished dish.
-
 - 🌟 Rating & Review System
 Rate recipes from 0–5 stars and leave detailed feedback.
-
 - 👤 User Profiles with Avatars
 Recipes show author info with profile pictures for a personal community touch.
-
 - 💾 Bookmark Your Favorites
 Logged-in members can save recipes for quick future access.
-
 - 🔥 “Top Rated This Week” Section
 Highlights trending recipes based on recent user ratings.
-
 - 🎮 Interactive Step-by-Step Mode
 Converts any recipe into a guided cooking walkthrough, one step at a time.
-
 - 🔍 Live Search
 Instantly find recipes by title or ingredients without page reloads.
-
 - 🧑‍🍳 Admin Dashboard
 Admins review and approve or reject submitted recipes before publication.
-
 - 🗃️ Local Storage Persistence
 Bookmarks, login states, and custom recipes are saved in the browser for seamless offline use.
-
 - 📱 Responsive Design
 Fully optimized for desktop, tablet, and mobile devices.
-
 - 🍹 Drinks Section
 Separate browse and detail pages for drinks, expanding the culinary experience.
 
